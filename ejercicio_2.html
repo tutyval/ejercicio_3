@@ -1,108 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<meta charset="utf-8">
-<title>Box Model</title>
+<meta charset="utf-8" />
+<title>z-index</title>
 <style>
-.box{
-	display: inline-block; 
-	width: 22%;
-	margin: 5px;
-	height: 100px;
-	padding: 5px;	
+html, body { margin: 0; }
+.elem {
+width: 200px;
+height: 200px;
 }
-.navbar{
-	position: sticky;
-	top:0;
-	height: 100px;
-	background-color: gray;
-	display: block;
+.square1 {
+background-color: rgba(255, 0, 0, .5);
 }
-ul{ 
-	display: block;
-	list-style-type: none;
+.square2 {
+background-color: rgba(0, 255, 0, .5);
+left: 25px;
+position: absolute;
+top: 25px;
 }
-li{
-	float: right;
-	color: white;
-	font-size: 14px;
-	border: 2px solid white;
-	padding: 10px;
-	margin: 30px;
-	border-radius: 15px;
-	text-transform: uppercase;
+.square3 {
+background-color: rgba(0, 0, 255, .5);
+left: 50px;
+position: absolute;
+top: 50px;
 }
 </style>
 </head>
-
 <body>
-	<ul class="navbar">
-		<li>mis poemas</li>
-		<li>contacto</li>
-		<li>blog</li>
-	</ul>
-	<div class="box">Sabrás que no te amo y que te amo
-puesto que de dos modos es la vida,
-la palabra es un ala del silencio,
-el fuego tiene una mitad de frío. 
-<img src="images/pajaro.png">
-</div>
-	<div class="box">Yo te amo para comenzar a amarte,
-para recomenzar el infinito
-y para no dejar de amarte nunca:
-por eso no te amo todavía.
-<img src="images/rosa.png">
-</div>
-	<div class="box">Te amo y no te amo como si tuviera
-en mis manos las llaves de la dicha
-y un incierto destino desdichado.
-<img src="images/loto.png">
-</div>
-	<div class="box">Mi amor tiene dos vidas para armarte.
-Por eso te amo cuando no te amo
-y por eso te amo cuando te amo. 
-<img src="images/azul.png">
-</div>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div class="elem square1"></div>
+<div class="elem square2"></div>
+<div class="elem square3"></div>
 </body>
 </html>
